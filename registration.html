@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <header>
+        <h1>Регистрация</h1>
+        <p>Создайте свою учетную запись</p>
+    </header>
+
+    <main>
+        <div class="registration-container">
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="username">Имя пользователя:</label>
+                    <input type="text" id="username" name="username" placeholder="Введите имя пользователя" required minlength="3" maxlength="15">
+                </div>
+                <div class="form-group">
+                    <label for="email">Электронная почта:</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" placeholder="Введите пароль" required minlength="6">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Подтверждение пароля:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Подтвердите пароль" required>
+                </div>
+                <div id="password-strength" class="password-strength"></div>
+                <button type="submit" class="submit-button">Зарегистрироваться</button>
+            </form>
+            <div id="message" aria-live="polite"></div>
+            <p>Уже есть учетная запись? <a href="login.html" class="login-button">Войти</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Game. Все права защищены.</p>
+    </footer>
+
+    <script src="registration.js"></script>
+</body>
+</html>

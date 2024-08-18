@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Играйте в лучшие онлайн игры.">
+    <meta name="keywords" content="игры, онлайн, экшн, приключения, головоломки">
+    <meta name="author" content="Game">
+    <title>Game - Ваш мир игр</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Game</h1>
+    <p>Всё для игр</p>
+</header>
+
+<nav>
+    <button class="toggle-button" id="toggle-button" aria-label="Переключить категории">☰ Категории</button>
+    <div class="search-container">
+        <input type="text" placeholder="Поиск..." id="search-input" aria-label="Поиск игр">
+    </div>
+    <a href="registration.html" class="login-button">Sign up</a>
+</nav>
+
+<div class="main-content">
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+          <h2>Категории</h2>
+            <ul id="category-list">
+                <li><a href="#" data-category="all">Все</a></li>
+                <li><a href="#" data-category="survival">Выживание</a></li>
+                <li><a href="#" data-category="io">IO Игры</a></li>
+                <li><a href="#" data-category="two-player">На 2 игрока</a></li>
+                <li><a href="#" data-category="racing">Гонки</a></li>
+                <li><a href="#" data-category="action">Экшн</a></li>
+                <li><a href="#" data-category="adventure">Приключения</a></li>
+                <li><a href="#" data-category="puzzle">Головоломки</a></li>
+                <li><a href="#" data-category="strategy">Стратегии</a></li>
+                <li><a href="#" data-category="sports">Спорт</a></li>
+                <li><a href="#" data-category="simulation">Симуляторы</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="game-grid">
+        <!-- Игры с рабочими ссылками и картинками -->
+        <div class="game-card" data-category="io">
+            <a href="https://devast.io" target="_blank">
+                <img src="https://i.ytimg.com/vi/DokQ0MJJFTg/maxresdefault.jpg" alt="Devast.io">
+                <h3>Devast.io</h3>
+                <p>Играйте в многопользовательский экшен.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="puzzle">
+            <a href="https://www.crazygames.com/game/sudoku" target="_blank">
+                <img src="https://i.imgur.com/1EYkiF7.jpg" alt="Sudoku">
+                <h3>Sudoku</h3>
+                <p>Логическая игра для тренировки ума.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="puzzle">
+            <a href="https://www.crazygames.com/game/hidden-objects" target="_blank">
+                <img src="https://i.imgur.com/uw0sRLV.jpg" alt="Hidden Objects">
+                <h3>Hidden Objects</h3>
+                <p>Найдите все скрытые предметы.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="sports">
+            <a href="https://www.crazygames.com/game/fightings" target="_blank">
+                <img src="https://i.imgur.com/RjGQe5g.jpg" alt="Fightings">
+                <h3>Fightings</h3>
+                <p>Сразитесь с противниками!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="strategy">
+            <a href="https://www.crazygames.com/game/pool" target="_blank">
+                <img src="https://i.imgur.com/eyN2gCL.jpg" alt="Pool">
+                <h3>Pool</h3>
+                <p>Сыграйте в бильярд.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="adventure">
+            <a href="https://www.crazygames.com/game/abandoned" target="_blank">
+                <img src="https://i.imgur.com/XmTNEVA.jpg" alt="Abandoned">
+                <h3>Abandoned</h3>
+                <p>Исследуйте заброшенные места.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="sports">
+            <a href="https://www.crazygames.com/game/soccer" target="_blank">
+                <img src="https://i.imgur.com/uvYtUKp.jpg" alt="Soccer">
+                <h3>Soccer</h3>
+                <p>Прокладывайте путь к голу!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="simulation">
+            <a href="https://www.agame.com/game/bike-racing" target="_blank">
+                <img src="https://i.imgur.com/3M7Wr8U.jpg" alt="Bike Racing">
+                <h3>Bike Racing</h3>
+                <p>Соревнуйтесь на мотоциклах.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="action">
+            <a href="https://www.crazygames.com/game/survive" target="_blank">
+                <img src="https://i.imgur.com/8IV0GGC.jpg" alt="Survive">
+                <h3>Survive</h3>
+                <p>Выживайте в опасных условиях.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="puzzle">
+            <a href="https://www.crazygames.com/game/memory" target="_blank">
+                <img src="https://i.imgur.com/p5N9Fne.jpg" alt="Memory Game">
+                <h3>Memory Game</h3>
+                <p>Запоминайте пары карточек.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="two-player">
+            <a href="https://www.crazygames.com/game/2-players" target="_blank">
+                <img src="https://i.imgur.com/SCT7YhR.jpg" alt="2 Players">
+                <h3>2 Players</h3>
+                <p>Сразитесь с другом!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="puzzle">
+            <a href="https://www.crazygames.com/game/wooden-jigsaw" target="_blank">
+                <img src="https://i.imgur.com/92ewwXc.jpg" alt="Wooden Jigsaw">
+                <h3>Wooden Jigsaw</h3>
+                <p>Соберите деревянные пазлы.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="action">
+            <a href="https://www.crazygames.com/game/raft" target="_blank">
+                <img src="https://i.imgur.com/4UBGySc.jpg" alt="Raft">
+                <h3>Raft</h3>
+                <p>Выживайте на плоту на океане.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="adventure">
+            <a href="https://www.crazygames.com/game/city-adventure" target="_blank">
+                <img src="https://i.imgur.com/Ou3Mxi5.jpg" alt="City Adventure">
+                <h3>City Adventure</h3>
+                <p>Исследуйте город и его тайны.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="action">
+            <a href="https://www.crazygames.com/game/parkour" target="_blank">
+                <img src="https://i.imgur.com/Jm1WALN.jpg" alt="Parkour">
+                <h3>Parkour</h3>
+                <p>Покажите свои навыки паркура!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="simulation">
+            <a href="https://www.crazygames.com/game/happy-fishing" target="_blank">
+                <img src="https://i.imgur.com/x0hUOCC.jpg" alt="Happy Fishing">
+                <h3>Happy Fishing</h3>
+                <p>Ловите рыбу и веселитесь!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="strategy">
+            <a href="https://www.crazygames.com/game/defend-the-castle" target="_blank">
+                <img src="https://i.imgur.com/5yOgWX5.jpg" alt="Defend The Castle">
+                <h3>Defend The Castle</h3>
+                <p>Защитите свой замок от врагов!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="sports">
+            <a href="https://www.crazygames.com/game/basketball" target="_blank">
+                <img src="https://i.imgur.com/Z87sLZg.jpg" alt="Basketball">
+                <h3>Basketball</h3>
+                <p>Играйте в баскетбол!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="action">
+            <a href="https://www.crazygames.com/game/krunker" target="_blank">
+                <img src="https://i.imgur.com/T4pOHbH.jpg" alt="Krunker">
+                <h3>Krunker</h3>
+                <p>Экшн FPS игра.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="puzzle">
+            <a href="https://www.crazygames.com/game/2048" target="_blank">
+                <img src="https://i.imgur.com/g2tGgl9.jpg" alt="2048">
+                <h3>2048</h3>
+                <p>Сложите плитки до 2048.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="adventure">
+            <a href="https://www.crazygames.com/game/treasure-hunt" target="_blank">
+                <img src="https://i.imgur.com/4A0sNlD.jpg" alt="Treasure Hunt">
+                <h3>Treasure Hunt</h3>
+                <p>Найдите сокровища!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="two-player">
+            <a href="https://www.crazygames.com/game/2-player-piano" target="_blank">
+                <img src="https://i.imgur.com/nRQG4U5.jpg" alt="2 Player Piano">
+                <h3>2 Player Piano</h3>
+                <p>Играйте на пианино вдвоём!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="sports">
+            <a href="https://www.crazygames.com/game/ultimate-tennis" target="_blank">
+                <img src="https://i.imgur.com/IDgr5J5.jpg" alt="Ultimate Tennis">
+                <h3>Ultimate Tennis</h3>
+                <p>Играйте в теннис!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="simulation">
+            <a href="https://www.crazygames.com/game/cooking" target="_blank">
+                <img src="https://i.imgur.com/7xTCvCH.jpg" alt="Cooking">
+                <h3>Cooking</h3>
+                <p>Станьте шеф-поваром!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="io">
+            <a href="https://www.crazygames.com/game/slither-io" target="_blank">
+                <img src="https://i.imgur.com/4TY5fuq.jpg" alt="Slither.io">
+                <h3>Slither.io</h3>
+                <p>Станьте самой длинной змеёй!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="action">
+            <a href="https://www.crazygames.com/game/fight" target="_blank">
+                <img src="https://i.imgur.com/sSgfZcK.jpg" alt="Fight">
+                <h3>Fight</h3>
+                <p>Сразитесь с противниками!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="puzzle">
+            <a href="https://www.crazygames.com/game/farm-escape" target="_blank">
+                <img src="https://i.imgur.com/hybo5Iq.jpg" alt="Farm Escape">
+                <h3>Farm Escape</h3>
+                <p>Убедитесь, что вам удастся сбежать с фермы!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="strategy">
+            <a href="https://www.crazygames.com/game/land-of-wind" target="_blank">
+                <img src="https://i.imgur.com/2Bmf6V4.jpg" alt="Land of Wind">
+                <h3>Land of Wind</h3>
+                <p>Постройте своё королевство!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="action">
+            <a href="https://www.crazygames.com/game/stunt" target="_blank">
+                <img src="https://i.imgur.com/KLSXpCg.jpg" alt="Stunt">
+                <h3>Stunt</h3>
+                <p>Исполните невероятные трюки!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="simulation">
+            <a href="https://www.crazygames.com/game/simulator" target="_blank">
+                <img src="https://i.imgur.com/J0G2sn5.jpg" alt="Simulator">
+                <h3>Simulator</h3>
+                <p>Погружение в мир симуляций.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="puzzle">
+            <a href="https://www.crazygames.com/game/jigsaw" target="_blank">
+                <img src="https://i.imgur.com/28nUOkR.jpg" alt="Jigsaw">
+                <h3>Jigsaw</h3>
+                <p>Соберите пазлы!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="two-player">
+            <a href="https://www.crazygames.com/game/worms" target="_blank">
+                <img src="https://i.imgur.com/mBPCfS0.jpg" alt="Worms">
+                <h3>Worms</h3>
+                <p>Играйте в червячков с другом!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="adventure">
+            <a href="https://www.crazygames.com/game/treasure" target="_blank">
+                <img src="https://i.imgur.com/x5mJtFE.jpg" alt="Treasure">
+                <h3>Treasure</h3>
+                <p>Ищите сокровища!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="sports">
+            <a href="https://www.crazygames.com/game/football" target="_blank">
+                <img src="https://i.imgur.com/OZt9tQ8.jpg" alt="Football">
+                <h3>Football</h3>
+                <p>Футбольные матчи в вашем распоряжении!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="action">
+            <a href="https://www.crazygames.com/game/racing" target="_blank">
+                <img src="https://i.imgur.com/zsG5Zlt.jpg" alt="Racing">
+                <h3>Racing</h3>
+                <p>Гонки на предельной скорости!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="simulation">
+            <a href="https://www.crazygames.com/game/rpg" target="_blank">
+                <img src="https://i.imgur.com/Q9b2eDR.jpg" alt="RPG">
+                <h3>RPG</h3>
+                <p>Погружение в мир ролевых игр.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="io">
+            <a href="https://agar.io/#ffa" target="_blank">
+                <img src="https://images.crazygames.com/agario/20230719092731/agario-cover?auto=format%2Ccompress&q=45&cs=strip&ch=DPR&w=1200&h=630&fit=crop" alt="Agar.io">
+                <h3>Agar.io</h3>
+                <p>Станьте самой большой клеткой!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="strategy">
+            <a href="https://www.crazygames.com/game/battle" target="_blank">
+                <img src="https://i.imgur.com/0QgrSc1.jpg" alt="Battle">
+                <h3>Battle</h3>
+                <p>Сразитесь в битве!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="puzzle">
+            <a href="https://www.crazygames.com/game/sudoku-2" target="_blank">
+                <img src="https://i.imgur.com/bP7A5hj.jpg" alt="Sudoku 2">
+                <h3>Sudoku 2</h3>
+                <p>Попробуйте новую версию Судоку.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="two-player">
+            <a href="https://www.crazygames.com/game/pvp" target="_blank">
+                <img src="https://i.imgur.com/ayUg4M8.jpg" alt="PVP">
+                <h3>PVP</h3>
+                <p>Сразитесь с другими игроками!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="adventure">
+            <a href="https://www.crazygames.com/game/cave" target="_blank">
+                <img src="https://i.imgur.com/N7pUvcg.jpg" alt="Cave">
+                <h3>Cave</h3>
+                <p>Изучите таинственную пещеру.</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="action">
+            <a href="https://www.crazygames.com/game/shooting" target="_blank">
+                <img src="https://i.imgur.com/BpXxJjD.jpg" alt="Shooting">
+                <h3>Shooting</h3>
+                <p>Участвуйте в стрельбе!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="sports">
+            <a href="https://www.crazygames.com/game/baseball" target="_blank">
+                <img src="https://i.imgur.com/XbKy2Bz.jpg" alt="Baseball">
+                <h3>Baseball</h3>
+                <p>Покажите свои навыки в бейсболе!</p>
+            </a>
+        </div>
+        <div class="game-card" data-category="puzzle">
+            <a href="https://www.crazygames.com/game/different" target="_blank">
+                <img src="https://i.imgur.com/PED1g2V.jpg" alt="Different">
+                <h3>Different</h3>
+                <p>Найдите различия!</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Game. Все права защищены.</p>
+    <p><a href="privacy.html">Политика конфиденциальности</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
